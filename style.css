@@ -6,10 +6,15 @@
   font-family: "Space Grotesk", sans-serif;
 }
 
+html, body {
+  overflow-x: hidden;
+}
+
 .hero-section {
   header {
     max-width: 100%;
     padding: 39px 20px 39px 0;
+
     @media screen and (max-width: 767px) {
       flex-direction: column;
       justify-content: center;
@@ -31,22 +36,33 @@
       }
     }
   }
+
   .top {
     @media screen and (max-width: 767px) {
       flex-direction: column;
       justify-content: center;
     }
+
     .left {
       position: relative;
       width: 709px;
+
       @media screen and (max-width: 767px) {
+        width: 100%;
         order: 2;
         gap: 0;
       }
+
       .circle {
         position: relative;
         left: -110px;
+
+        @media screen and (max-width: 767px) {
+          left: 0;
+          margin: 0 auto;
+        }
       }
+
       h1 {
         color: #ffffff;
         font-weight: 700;
@@ -58,56 +74,59 @@
         top: 65px;
         left: 0;
         z-index: 2;
+
         @media screen and (max-width: 767px) {
           width: 343px;
           font-weight: 700;
           font-size: 40px;
-          leading-trim: NONE;
           line-height: 40px;
           letter-spacing: -1.14px;
           text-align: center;
+          position: static;
+          margin: 0 auto;
         }
 
         @media screen and (min-width: 768px) and (max-width: 992px) {
           width: 450px;
-          font-weight: 700;
           font-size: 72px;
           line-height: 72px;
           letter-spacing: -2.05px;
         }
+
         span {
           border-bottom: 6px solid #4ee1a0;
         }
       }
+
       p {
         color: #d9d9d9;
         width: 445px;
         font-weight: 500;
-        font-style: Medium;
         font-size: 18px;
         line-height: 28px;
-        letter-spacing: 0px;
         margin-top: 150px;
+
         @media screen and (max-width: 767px) {
           width: 343px;
           margin-top: 50px;
-          font-weight: 500;
           font-size: 16px;
-          leading-trim: NONE;
           line-height: 26px;
-          letter-spacing: 0px;
           text-align: center;
         }
       }
+
       h6 {
         font-weight: 700;
         font-size: 16px;
         line-height: 26px;
         letter-spacing: 2.29px;
         color: #ffffff;
+
         @media screen and (max-width: 767px) {
           width: 120px;
+          margin: 0 auto;
         }
+
         &:hover {
           color: #4ee1a0;
         }
@@ -119,9 +138,11 @@
 
     .right {
       position: relative;
+
       @media screen and (max-width: 767px) {
         order: 1;
       }
+
       .man {
         object-fit: cover;
         width: 500px;
@@ -133,23 +154,31 @@
         @media screen and (min-width: 768px) and (max-width: 992px) {
           width: 322px;
           height: 600px;
+          right: 0;
         }
+
         @media screen and (max-width: 767px) {
           width: 250px;
           height: 390px;
-          right: -40px;
+          right: -40px; 
           top: -80px;
+          margin: 0 auto;
         }
       }
+
       .oval {
         position: absolute;
         left: -100px;
         bottom: 180px;
+
         @media screen and (min-width: 768px) and (max-width: 992px) {
-          left: 210px;
+          left: auto;
+          right: 0;
         }
+
         @media screen and (max-width: 767px) {
-          left: 305px;
+          left: 290px;
+          right: 0; 
           bottom: 130px;
         }
       }
@@ -162,23 +191,25 @@
       width: 100%;
       border: 1px solid #ffffff;
     }
+
     .parent-1,
     .parent-2 {
       padding: 72px 0;
       gap: 50px;
       max-width: 100%;
+
       @media screen and (max-width: 767px) {
         flex-wrap: wrap;
         justify-content: center;
         text-align: center;
       }
+
       .son {
         width: 345px;
         max-width: 100%;
         h1 {
           color: #ffffff;
           font-weight: 700;
-          font-style: Bold;
           font-size: 48px;
           line-height: 56px;
           letter-spacing: -1.5px;
@@ -186,15 +217,14 @@
         p {
           color: #d9d9d9;
           font-weight: 500;
-          font-style: Medium;
           font-size: 18px;
           line-height: 28px;
-          letter-spacing: 0px;
         }
       }
     }
   }
 }
+
 
 .section-projects {
   padding-bottom: 130px;
@@ -274,6 +304,7 @@ footer {
     padding-top: 84px;
     @media screen and (max-width: 992px) {
       flex-direction: column;
+      align-items: center;
     }
     .left {
       width: 445px;
