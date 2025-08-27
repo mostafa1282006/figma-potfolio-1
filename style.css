@@ -1,0 +1,372 @@
+@import url("https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Space Grotesk", sans-serif;
+}
+
+.hero-section {
+  header {
+    max-width: 100%;
+    padding: 39px 20px 39px 0;
+    @media screen and (max-width: 767px) {
+      flex-direction: column;
+      justify-content: center;
+      gap: 40px;
+    }
+    h4 {
+      font-weight: 700;
+      font-size: 32px;
+      line-height: 32px;
+      letter-spacing: -0.44px;
+    }
+    nav {
+      gap: 32px;
+      position: relative;
+      right: 135px;
+      z-index: 1;
+      @media screen and (max-width: 992px) {
+        right: 0;
+      }
+    }
+  }
+  .top {
+    @media screen and (max-width: 767px) {
+      flex-direction: column;
+      justify-content: center;
+    }
+    .left {
+      position: relative;
+      width: 709px;
+      @media screen and (max-width: 767px) {
+        order: 2;
+        gap: 0;
+      }
+      .circle {
+        position: relative;
+        left: -110px;
+      }
+      h1 {
+        color: #ffffff;
+        font-weight: 700;
+        font-style: Bold;
+        font-size: 88px;
+        line-height: 88px;
+        letter-spacing: -2.5px;
+        position: absolute;
+        top: 65px;
+        left: 0;
+        z-index: 2;
+        @media screen and (max-width: 767px) {
+          width: 343px;
+          font-weight: 700;
+          font-size: 40px;
+          leading-trim: NONE;
+          line-height: 40px;
+          letter-spacing: -1.14px;
+          text-align: center;
+        }
+
+        @media screen and (min-width: 768px) and (max-width: 992px) {
+          width: 450px;
+          font-weight: 700;
+          font-size: 72px;
+          line-height: 72px;
+          letter-spacing: -2.05px;
+        }
+        span {
+          border-bottom: 6px solid #4ee1a0;
+        }
+      }
+      p {
+        color: #d9d9d9;
+        width: 445px;
+        font-weight: 500;
+        font-style: Medium;
+        font-size: 18px;
+        line-height: 28px;
+        letter-spacing: 0px;
+        margin-top: 150px;
+        @media screen and (max-width: 767px) {
+          width: 343px;
+          margin-top: 50px;
+          font-weight: 500;
+          font-size: 16px;
+          leading-trim: NONE;
+          line-height: 26px;
+          letter-spacing: 0px;
+          text-align: center;
+        }
+      }
+      h6 {
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 26px;
+        letter-spacing: 2.29px;
+        color: #ffffff;
+        @media screen and (max-width: 767px) {
+          width: 120px;
+        }
+        &:hover {
+          color: #4ee1a0;
+        }
+        span {
+          border-bottom: 2px solid #4ee1a0;
+        }
+      }
+    }
+
+    .right {
+      position: relative;
+      @media screen and (max-width: 767px) {
+        order: 1;
+      }
+      .man {
+        object-fit: cover;
+        width: 500px;
+        height: 720px;
+        position: relative;
+        right: 43px;
+        top: -120px;
+
+        @media screen and (min-width: 768px) and (max-width: 992px) {
+          width: 322px;
+          height: 600px;
+        }
+        @media screen and (max-width: 767px) {
+          width: 250px;
+          height: 390px;
+          right: -40px;
+          top: -80px;
+        }
+      }
+      .oval {
+        position: absolute;
+        left: -100px;
+        bottom: 180px;
+        @media screen and (min-width: 768px) and (max-width: 992px) {
+          left: 210px;
+        }
+        @media screen and (max-width: 767px) {
+          left: 305px;
+          bottom: 130px;
+        }
+      }
+    }
+  }
+
+  .bottom {
+    background-color: black;
+    hr {
+      width: 100%;
+      border: 1px solid #ffffff;
+    }
+    .parent-1,
+    .parent-2 {
+      padding: 72px 0;
+      gap: 50px;
+      max-width: 100%;
+      @media screen and (max-width: 767px) {
+        flex-wrap: wrap;
+        justify-content: center;
+        text-align: center;
+      }
+      .son {
+        width: 345px;
+        max-width: 100%;
+        h1 {
+          color: #ffffff;
+          font-weight: 700;
+          font-style: Bold;
+          font-size: 48px;
+          line-height: 56px;
+          letter-spacing: -1.5px;
+        }
+        p {
+          color: #d9d9d9;
+          font-weight: 500;
+          font-style: Medium;
+          font-size: 18px;
+          line-height: 28px;
+          letter-spacing: 0px;
+        }
+      }
+    }
+  }
+}
+
+.section-projects {
+  padding-bottom: 130px;
+  .top {
+    h1 {
+      font-weight: 700;
+      font-style: Bold;
+      font-size: 88px;
+      color: #ffffff;
+      line-height: 88px;
+      letter-spacing: -2.5px;
+      @media screen and (max-width: 767px) {
+        font-weight: 700;
+        font-size: 40px;
+        leading-trim: NONE;
+        line-height: 40px;
+        letter-spacing: -1.14px;
+      }
+    }
+    h6 {
+      font-weight: 700;
+      font-size: 16px;
+      line-height: 26px;
+      letter-spacing: 2.29px;
+      color: #ffffff;
+      &:hover {
+        color: #4ee1a0;
+      }
+      span {
+        border-bottom: 2px solid #4ee1a0;
+      }
+    }
+  }
+  .bottom {
+    padding-top: 80px;
+    .parent {
+      gap: 30px;
+      @media screen and (max-width: 767px) {
+        flex-direction: column;
+      }
+      .son {
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+        @media screen and (max-width: 767px) {
+          width: 343px;
+        }
+        img {
+          height: 400px;
+        }
+        h6 {
+          padding: 20px 0;
+          font-weight: 700;
+          font-style: Bold;
+          font-size: 24px;
+          line-height: 32px;
+          letter-spacing: 0px;
+          color: #ffffff;
+        }
+        .language {
+          p {
+            font-weight: 500;
+            font-style: Medium;
+            font-size: 18px;
+            line-height: 28px;
+            letter-spacing: 0px;
+            color: #d9d9d9;
+          }
+        }
+      }
+    }
+  }
+}
+
+footer {
+  .top {
+    padding-top: 84px;
+    @media screen and (max-width: 992px) {
+      flex-direction: column;
+    }
+    .left {
+      width: 445px;
+      @media screen and (max-width: 767px) {
+        width: 343px;
+      }
+      img {
+        position: relative;
+        left: -200px;
+      }
+      h1 {
+        color: #ffffff;
+        font-weight: 700;
+        font-style: Bold;
+        font-size: 88px;
+        line-height: 88px;
+        letter-spacing: -2.5px;
+
+        @media screen and (max-width: 767px) {
+          width: 343px;
+          font-weight: 700;
+          font-size: 40px;
+          leading-trim: NONE;
+          line-height: 40px;
+          letter-spacing: -1.14px;
+          text-align: center;
+        }
+      }
+      p {
+        color: #d9d9d9;
+        font-weight: 500;
+        font-style: Medium;
+        font-size: 18px;
+        line-height: 28px;
+        letter-spacing: 0px;
+        @media screen and (max-width: 767px) {
+          text-align: center;
+        }
+      }
+    }
+    .right {
+      width: 445px;
+      max-width: 100%;
+      @media screen and (max-width: 767px) {
+        text-align: center;
+      }
+      input,
+      textarea {
+        width: 100%;
+        border: 0;
+        background-color: #242424;
+      }
+      hr {
+       max-width: 100%;
+        border: 1px solid #ffffff;
+      }
+      h6 {
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 26px;
+        letter-spacing: 2.29px;
+        color: #ffffff;
+        text-align: right;
+        &:hover {
+          color: #4ee1a0;
+        }
+        span {
+          border-bottom: 2px solid #4ee1a0;
+        }
+      }
+    }
+  }
+  .bottom {
+    hr {
+      width: 100%;
+      margin-top: 40px;
+      border: 1px solid #ffffff;
+    }
+  }
+  .foot {
+    padding: 47px 0 92px 0;
+    @media screen and (max-width: 767px) {
+      flex-direction: column;
+      gap: 10px;
+    }
+    h4 {
+      font-weight: 700;
+      font-size: 32px;
+      line-height: 32px;
+      letter-spacing: -0.44px;
+    }
+    nav {
+      gap: 32px;
+    }
+  }
+}
