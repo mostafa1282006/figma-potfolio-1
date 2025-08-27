@@ -354,7 +354,8 @@ footer {
       input,
       textarea {
         width: 100%;
-        border: 0;
+        border: none;
+        outline: none;
         background-color: #242424;
       }
       hr {
